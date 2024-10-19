@@ -23,21 +23,23 @@ text = "Hello World!"
 encoded_text, key = index_cipher_shifts(text)
 print(f"Encoded Text: {encoded_text}")
 print(f"Key: {key}")
-
-Decryption
+```
+### Decryption
 
 To decode a message, use the decode_indexed_cipher() function and provide the encoded text along with the key.
 
+``` python
 from decipher import decode_indexed_cipher
 
 encoded_text = "Your encoded message here"
 key = [4, 2, 5, ...]  # Key generated during encryption
 decoded_text = decode_indexed_cipher(encoded_text, key)
 print(f"Decoded Text: {decoded_text}")
-
-Example
-
+```
+## Example
+```
 Input Message: Hello World!
 Encoded Message: Jgnnq Yqtnf!
 Key: [2, 4, 3, 5, 1, 2, 3, 4, 2, 1, 5]
+```
 
